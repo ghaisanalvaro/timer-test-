@@ -1,6 +1,6 @@
 ## 🚧 Project Status
 
-**Work in Progress** 🛠️
+**Still Work in Progress** 🛠️
 
 Focus Timer is currently under development and may not work as expected. Some features and functionalities are still being improved, and bugs may occur.
 
