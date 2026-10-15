@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101114">
+  <meta name="description" content="Focus Timer - Pomodoro timer sederhana untuk meningkatkan produktivitas.">
+  <title>Focus Timer — Stay Focused</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <a class="brand" href="#">
+        <span class="brand-icon">◷</span>
+        Focus<span class="brand-light">Timer</span>
+      </a>
+      <span class="status"><span class="status-dot"></span> YOUR SPACE TO FOCUS</span>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">MAKE EVERY MINUTE COUNT</p>
+      <h1>One thing at a time<span>.</span></h1>
+      <p class="subtitle">Tenangkan pikiran. Fokus pada satu hal.</p>
+    </section>
+
+    <section class="timer-card" aria-label="Pomodoro timer">
+      <div class="mode-tabs" aria-label="Pilih mode timer">
+        <button class="mode active" data-mode="focus">Focus</button>
+        <button class="mode" data-mode="short">Short break</button>
+        <button class="mode" data-mode="long">Long break</button>
+      </div>
+
+      <div class="timer-ring" id="timerRing">
+        <div class="timer-inner">
+          <span class="timer-label" id="timerLabel">TIME TO FOCUS</span>
+          <div class="time" id="time" role="timer"
+               aria-label="Waktu tersisa">25:00</div>
+          <span class="timer-state" id="timerState">Ready when you are.</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="reset-btn" id="resetBtn" aria-label="Reset timer">↺</button>
+        <button class="start-btn" id="startBtn">
+          <span id="startIcon">▶</span>
+          <span id="startText">Start focusing...</span>
+        </button>
+        <button class="reset-btn" id="skipBtn" aria-label="Lewati sesi">↠</button>
+      </div>
+
+      <p class="keyboard-hint">Take a breath. You've got this.</p>
+    </section>
+
+    <section class="bottom-grid">
+      <article class="info-card">
+        <span class="info-icon">✳</span>
+        <div>
+          <p class="info-label">COMPLETED SESSIONS</p>
+          <p class="info-value"><span id="sessions">0</span> <span class="info-unit">sessions</span></p>
+        </div>
+      </article>
+      <article class="info-card">
+        <span class="info-icon">◷</span>
+        <div>
+          <p class="info-label">TOTAL FOCUS TIME</p>
+          <p class="info-value"><span id="totalMinutes">0</span> <span class="info-unit">minutes</span></p>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <p>Made for a more mindful workflow <span>✦</span></p>
+    </footer>
+  </main>
+</body>
+</html>
